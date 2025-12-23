@@ -122,3 +122,15 @@ const result = value1 && value2;
     - ***ref*** it is a containerwith special react features.
     
 <img src="hooks.png" alt="hooks written style" width="500" />
+
+---
+
+## Routes
+- `<Routes></Routes>` - This tells react all the pages that are in the wesite.
+  - `<Route></Route>` - To add a page to the website we use route. 
+  - Route=Page.
+    - `<Route path="/" element={<HomePage />}></Route>`
+    - Path="/" (should be lowercase path) —     defines the URL route (e.g., domain.com/)
+    - element={<HomePage />} — specifies what    component to display at that route
+    - when an path is empy we an put ***index*** in its place
+ 
