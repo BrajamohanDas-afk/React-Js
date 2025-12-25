@@ -9,14 +9,14 @@
 ---
 
 ## What is Babel?
-- It is a JavaScript compiler which translates other languages into JavaScript.
-- `<script type="text/babel">`: This will help convert the HTML to JavaScript.
+- It is a JavaScript compiler that translates other languages into JavaScript.
+- `<script type="text/babel">`: This helps convert the HTML to JavaScript.
 
 ---
 
-## JSX 
+## JSX
 - JavaScript XML.
-- Same as JavaScript, but we can write HTML directly in our JavaScript code.
+- Similar to JavaScript, but allows us to write HTML directly in our JavaScript code.
 
 ---
 
@@ -52,16 +52,16 @@ const div =
   }
   ```
 - In JSX, everything needs a closing tag like `<input></input>`, so the shortcut for this is `<input />`.
-- In the *return*, when we return more than 1 element it shows an error. To fix this we can do it through a *div*.
+- In the *return*, when we return more than 1 element, it shows an error. To fix this, we can wrap them in a *div*.
 - There are 2 ways to insert a component: `{ChatInput()}` and `<ChatInput></ChatInput>`.
-- `<Fragment></Fragment>` or `<></>` both of them help us group multiple elements together.
-- Every component function gets one parameter.
+- `<Fragment></Fragment>` or `<></>`: Both help us group multiple elements together.
+- Every component function receives one parameter.
 
 ### Props
 - Props is an object.
-- It's the shortcut for properties.
+- It's short for "properties".
 - It makes the code reusable.
-- Shortcut:
+- Destructuring shortcut:
   ```javascript
   const message = props.message;
   const sender = props.sender;
@@ -78,8 +78,8 @@ const div =
 const result = value1 && value2;
 ```
 - If `value1` is true, then the result will be `value2`.
-- This works just like an if-statement. 
-- This also lets us insert if-statements directly into the JSX.
+- This works like an if-statement.
+- This allows us to insert conditional logic directly into JSX.
 
 ---
 
@@ -103,7 +103,7 @@ const result = value1 && value2;
 ## State
 - Data that is connected to the HTML.
 - When we update this data, it will update the HTML.
-- How to create state: `React.useState()` thi is also a ***hook*** 
+- How to create state: `React.useState()` — this is also a ***hook***. 
 
 ### Spread Operator (...)
 - Takes the values in an array and copies them into a new array.
@@ -116,26 +116,27 @@ const result = value1 && value2;
 ---
 
 ## Hooks
-- insert Recat features into our component
-- every hook start with a **use**
-- There are 3 main Hooks
-  - `useEffect()` - runs some code after the component is updated or created.
-    - Dependency Array = contol when useEffect runs.
+- Inserts React features into our component.
+- Every hook starts with **use**.
+- There are 3 main Hooks:
+  - `useEffect()` — runs some code after the component is updated or created.
+    - Dependency Array = controls when useEffect runs.
 
     <img src="useEffect().png" alt="useEffect()" width="500" />
-  - `useRef()` - automatically saves an html element from the component.
-    - ***ref*** it is a containerwith special react features.
+  - `useRef()` — automatically saves an HTML element from the component.
+    - ***ref*** is a container with special React features.
     
 <img src="hooks.png" alt="hooks written style" width="500" />
 
 ---
 
 ## Routes
-- `<Routes></Routes>` - This tells react all the pages that are in the wesite.
-  - `<Route></Route>` - To add a page to the website we use route. 
-  - Route=Page.
+- `<Routes></Routes>` — tells React all the pages that are in the website.
+  - `<Route></Route>` — used to add a page to the website.
+  - Route = Page.
     - `<Route path="/" element={<HomePage />}></Route>`
-    - Path="/" (should be lowercase path) —     defines the URL route (e.g., domain.com/)
-    - element={<HomePage />} — specifies what    component to display at that route
-    - when an path is empy we an put ***index*** in its place
+    - `path="/"` (should be lowercase) — defines the URL route (e.g., domain.com/)
+    - `element={<HomePage />}` — specifies what component to display at that route
+    - When a path is empty, we can use ***index*** in its place
+- `<Link></Link>` — can be used in place of the ***a tag***. The `<a>` tag reloads the page, while the ***Link tag*** directly navigates without reloading. Use `to` instead of `href`.
  
