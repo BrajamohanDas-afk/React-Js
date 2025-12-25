@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Basics</title>
+  </head>
+  <body>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+        
+
+        function ResetButton(props){
+            function reset(){
+                props.setInputText('');
+            }
+            return(
+            <button onClick={reset}>
+                Reset 
+            </button>
+            )
+        }
+
+        function ExampleSet(props){
+            function example(){
+                props.setInputText('Braja')
+            }
+            return(
+            <button onClick={example}>
+                Example 
+            </button>
+            );
+        }
+      
+    
+        function App() {
+            const [inputText, setInputText] = React.useState('')
+            
+            function saveText(event) {
+            setInputText(event.target.value);
+            }
+
+            return(
+                <>
+                <ResetButton
+                    inputText = {inputText}
+                    setInputText = {setInputText}
+                />
+                <ExampleSet
+                    inputText = {inputText}
+                    setInputText = {setInputText}
+                />
+                <input onChange = {saveText}
+                value={inputText}
+                />
+                <p>Hello {inputText}</p>
+                </>
+            );
+        }
+
+
+        const container = document.querySelector('.js-container');
+        ReactDOM.createRoot(container).render(<App />);
+    </script>
+  </body>
+</html>

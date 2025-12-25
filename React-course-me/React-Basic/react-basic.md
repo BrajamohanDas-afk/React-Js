@@ -94,6 +94,9 @@ const result = value1 && value2;
 ### Event Object
 - Event is an object.
 - `event.target.value`: Gives us the value of the element that we are typing in.
+  - `event.` — the event object triggered by user interaction (e.g., typing, clicking)
+  - `target.` — the DOM element that triggered the event
+  - `value` — the current content/value of that input element
 
 ---
 
@@ -118,6 +121,8 @@ const result = value1 && value2;
 - There are 3 main Hooks
   - `useEffect()` - runs some code after the component is updated or created.
     - Dependency Array = contol when useEffect runs.
+
+    <img src="useEffect().png" alt="useEffect()" width="500" />
   - `useRef()` - automatically saves an html element from the component.
     - ***ref*** it is a containerwith special react features.
     

@@ -1,6 +1,4 @@
-.send-button{
-  background-color: rgb(25, 135, 84);
-  color: white;
+.send-button, .clear-button {
   padding: 12px 20px;
   margin-left: 10px;
   border: none;
@@ -9,15 +7,35 @@
   cursor: pointer;
 }
 
-.chat-input{
+.send-button {
+  background-color: rgb(25, 135, 84);
+  color: white;
+}
+
+.clear-button {
+  background-color: rgb(230, 230, 230);
+}
+
+.chat-input {
   padding: 12px 15px;
   border-radius: 10px;
   border-width: 1px;
   font-size: 15px;
+
   flex-grow: 1;
 }
 
 .chat-input-container{
   display: flex;
   margin-bottom: 60px;
+}
+ 
+.welcome-message {
+  color: rgb(120, 120, 120);
+  text-align: center;
+}
+
+.loading-spinner {
+  height: 40px;
+  margin: -15px;
 }
