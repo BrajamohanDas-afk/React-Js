@@ -147,3 +147,9 @@ const result = value1 && value2;
 - `<Link></Link>` — can be used in place of the ***a tag***. The `<a>` tag reloads the page, while the ***Link tag*** directly navigates without reloading. Use `to` instead of `href`.
 - `<NavLink></NavLink>` — similar to `<Link>`, but useful for navigation links (links at the top of a page, usually in a header). It automatically applies an "active" class to the link when its route matches the current URL, making it easy to style the currently active navigation item.
  
+---
+
+## Axios
+- It is a cleaner way to make request to the backend.
+- It is a npm package 
+- In place of `fetch` we can use `axios.get()`

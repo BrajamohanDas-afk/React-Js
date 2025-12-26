@@ -1,9 +1,15 @@
+import axios from "axios";
 import { Header } from "../component/Header";
 import CheckmarkIcon from "../assets/images/icons/checkmark.png";
 import { products } from "../../ProductsFolder/products";
 import "./HomePage.css";
 
 export function HomePage() {
+  axios.get ('http://localhost:3000/api/products')
+    .then((response)=>{
+      console.log(response.data);
+    });
+     
   return (
     <>
       <link rel="icon" type="image/svg+xml" href="home-favicon.png" />
