@@ -8,6 +8,12 @@
 
 ---
 
+## To Generate the HTML in React 
+- There are Several steps:-
+  - ***Save The Data***
+
+---
+
 ## What is Babel?
 - It is a JavaScript compiler that translates other languages into JavaScript.
 - `<script type="text/babel">`: This helps convert the HTML to JavaScript.
