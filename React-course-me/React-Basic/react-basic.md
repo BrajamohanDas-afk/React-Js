@@ -153,3 +153,9 @@ const result = value1 && value2;
 - It is a cleaner way to make request to the backend.
 - It is a npm package 
 - In place of `fetch` we can use `axios.get()`
+
+---
+
+## Async Await
+- It is a better way to use the promise 
+- To use `async await` in `useEffect()` we have to create a new function to use it
