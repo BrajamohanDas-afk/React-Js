@@ -127,6 +127,10 @@ const result = value1 && value2;
 - There are 3 main Hooks:
   - `useEffect()` — runs some code after the component is updated or created.
     - Dependency Array = controls when useEffect runs.
+    - The inner function of the `useEffect` should not return promise
+    - It should only return nothing or cleanup function
+
+      <img src="CleanupFunction.png" alt="This is how a cleanup function should look like" width="300" />
 
     <img src="useEffect().png" alt="useEffect()" width="500" />
   - `useRef()` — automatically saves an HTML element from the component.
@@ -159,3 +163,4 @@ const result = value1 && value2;
 ## Async Await
 - It is a better way to use the promise 
 - To use `async await` in `useEffect()` we have to create a new function to use it
+  - 
